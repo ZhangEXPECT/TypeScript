@@ -1,0 +1,31 @@
+{
+    /* 指定需要编译的
+        路径：**表示目录
+            *表示文件   
+    */
+    "include": [
+        "./src"
+    ],
+    "exclude": [],
+    /* 编译器选项 */
+    "compilerOptions": {
+        "target": "ES6", //指定编译的ES版本
+        "module": "System", //指定要使用的模块化规范  （与outFile冲突）(system,amd)
+        "lib": [
+            "DOM",
+            "ES6"
+        ], //指定项目中用到的库
+        "outDir": "./dist", //指定编译后存放的位置
+        "outFile": "./dist/concat.js", //设置outFile后全局作用域中的代码会合并到同一个文件中
+        "allowJs": false, //是否对js文件进行编译
+        "checkJs": false, //检查js文件是否符合规范
+        "removeComments": false, //是否移除注释
+        "noEmitOnError": true, //有错误时不生成编译后的文件
+        "alwaysStrict": false, //设置编译后的文件是否使用严格模式
+        "noImplicitAny": true, //不允许隐式的any类型
+        "noImplicitThis": true,//不允许不明确类型的this
+        "strictNullChecks":  true, //严格检查空值
+        "strict": false,//总开关
+         
+     },
+}

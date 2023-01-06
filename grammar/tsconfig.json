@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "ES6",
+        "target": "ES6",
+        "strict": true,
+        "outDir": "./dist",
+        "noEmitOnError": true, //有错不编译
+    },
+    "include": [
+        "./src/**/*"  //指定编译的目录
+    ],
+    "exclude": []
+}
